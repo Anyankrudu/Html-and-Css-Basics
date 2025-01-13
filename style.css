@@ -1,17 +1,88 @@
-/* colors  */
-/* #1c1cf0 */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+:root {
+  --background: #d8e3fa;
+  --white: #ffffff;
+  --gray: #eaeaec;
+  --text: #29283f;
+  --primary: #1c1cf0;
 }
 
-html {
-  font-size: 62.5%;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: inherit; */
 }
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: var(--background);
+}
+
+.container {
+  /* height: 80%; */
+  max-width: clamp(25rem, 100vw, 58rem);
+  /* max-height: clamp(20rem, 80vh, 70.5rem); */
+  min-width: 25rem;
+  min-height: 20rem;
+  box-shadow: 0px 20px 50px 0 rgba(0, 0, 0, 0.35);
+  padding: 2rem;
+  border-radius: 1.4rem;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.option_box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.ride_box {
+  display: flex;
+  gap: 2rem;
+  height: 60%;
+}
+
+.action_btns {
+  border: 1px solid var(--text);
+  background: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.ride {
+  padding: 1rem;
+  /* font-size: 0.9rem; */
+  /* box-shadow: 0px 20px 10px 0 rgba(0, 0, 0, 0.35); */
+}
+
+.ride h5 {
+  margin-bottom: 1rem;
+}
+
+.ride button {
+  margin-top: 1rem;
+}
+
+.ride h5,
+p {
+  align-self: flex-end;
 }
