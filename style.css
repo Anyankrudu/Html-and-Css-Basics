@@ -57,12 +57,13 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .ride_box {
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
+  flex: 1 1;
   justify-content: center;
   gap: 1rem;
   width: 100%;
@@ -105,11 +106,15 @@ li:first-child {
   color: var(--white);
 }
 
+.action_box > button:hover {
+  text-decoration: underline;
+  background-color: var(--text);
+}
+
 .ride button {
   margin-top: 1rem;
 }
 
 .ride_btn:hover {
-  background-color: var(--text);
-  color: var(--white);
+  text-decoration: underline;
 }
